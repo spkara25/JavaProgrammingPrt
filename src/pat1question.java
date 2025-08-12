@@ -12,7 +12,7 @@ public class pat1question {
         while(temp > 0)
         {
             digit = temp % 10;
-            reverse+= digit*10;
+            reverse = reverse*10 + digit;
             temp /=10;
         }
 
