@@ -2,7 +2,7 @@ package Strings;
 import java.util.*;
 
 public class maxVowels {
-    static void main()
+    public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
         String s,max="",w="";

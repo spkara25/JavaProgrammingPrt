@@ -4,7 +4,7 @@ import java.util.*;
 public class findLongestWord {
     public static String maxNumberOfVowels(String str) {
         char x;
-        String w = "", s = "", max = "";
+        String w = "", max = "";
         str = str.trim();
         str = str + " ";
         int i, f = 0, c = 0, longlength = 0;
