@@ -50,30 +50,37 @@ public class pat1question {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
+        int[] both = new int[100];
+        int[] palin = new int[100];
+        int[] perfect = new int[100];
+        int[] none = new int[100];
 
-        int num = sc.nextInt();
-
-        if(isPalin(num))
+        for(int i =0;i<100;i++)
         {
-            if(isPerfect(num))
+            if(isPalin(i))
             {
-                System.out.println("both");
+                if(isPerfect(i))
+                {
+                    System.out.println(i+" both");
+                }
+                else
+                {
+                    System.out.println(i+ " palindrome only");
+                }
             }
             else
             {
-                System.out.println("palindrome only");
+                if(isPerfect(i))
+                {
+                    System.out.println(i+" perfect");
+                }
+                else {
+                    System.out.println(i+" neither of them");
+                }
             }
         }
-        else
-        {
-            if(isPerfect(num))
-            {
-                System.out.println("perfect");
-            }
-            else {
-                System.out.println("neither of them");
-            }
-        }
+
+
 
         sc.close();
     }
